@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Laboratorium3</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Inter', sans-serif;
+        }
+        h1 {
+            font-size: 50px;
+        }
+        h4 {
+            font-size: 30px;
+        }
+</style>
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <div id="banner">
+        <div id="name">Dmytro Palamarchuk</div>
+        <div id="links">
+            <a href="index.html" style="color: black;">Główna</a>
+          <a href="Laboratorium2.html" style="color: blue;">Laboratorium2</a>
+          <a href="Ulubione książki.html" style="color: darkgreen;">Ulubione Książki</a>
+          <a href="Ulubione seriale.html" style="color: darkred;">Ulubione Seriale</a>
+        </div>
+    </div>
+    <script>
+        function zmienTekst() {
+        document.getElementById("tekst").innerHTML = "Witaj na mojej stronie!";
+        }
+        </script>
+</head>
+
+<body onload="odswiezajCzas()">    
+<style>
+        a{
+            color:white;
+            text-decoration: none;
+        }
+</style>
+<div>
+<h1 id="tekst">Witaj!</h1>
+<button onclick="zmienTekst()">Kliknij mnie</button>
+ 
+<h1 id="tekst">Zadanie 2</h1>
+<button onclick="alert('Witaj na mojej stronie')">Kliknij mnie</button>
+</div>
+
+<div>
+<h1>Parzyste liczby od 0 do 100(console):</h1>
+<script>
+    for(var i = 0; i <=100; i++) {
+        if (i%2===0){
+            console.log(i);
+        }
+    }
+</script>
+</div>
+<div>
+<form>
+    <p>Podaj pierwszą liczbę:</p>
+    <input type="number" id="liczba1">
+    <p>Podaj drugą liczbę:</p>
+    <input type="number" id="liczba2">
+    <br>
+    <button type="button" onclick="dodaj()">Dodaj</button>
+</form>
+<script>function dodaj {
+    const liczba1=parselnt(document.getElementByld('Liczb a1').value);
+    const liczba2=parselnt(document.getElementByld('Liczb a2').value);
+    const wynik = liczba1+liczba2;
+    document.body.innerHTML += '<p>Wynik oddawania to:'+wynik+'</p>'
+    }
+    </script>
+</div>
+
+
+<p>Aktualny czas:</p>>
+<p id="'czas"></p>
+<script>
+
+    function odswiezajCzas() {
+        const teraz = new Date();
+        document.getElementByld('czas').innerHTML = teraz.toLocaleTimeString();
+        ML =teraz.toLocaleTimeString();
+        setTimeout(odswiezajCzas, 1000)
+    }
+</script>
+
+</body>
+</html>
