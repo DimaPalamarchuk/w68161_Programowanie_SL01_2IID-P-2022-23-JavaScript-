@@ -70,4 +70,3 @@ function checkValue(input) {
       const correspondenceAddressTextarea = document.querySelector('textarea[name="correspondenceAddress"]');
       
       function toggleCor
-      
