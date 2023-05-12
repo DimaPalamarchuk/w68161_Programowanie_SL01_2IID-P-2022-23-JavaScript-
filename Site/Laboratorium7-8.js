@@ -69,4 +69,4 @@ function checkValue(input) {
       const addressTextarea = document.querySelector('textarea[name="address"]');
       const correspondenceAddressTextarea = document.querySelector('textarea[name="correspondenceAddress"]');
       
-      function toggleCor
+      function toggleColor
